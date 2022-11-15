@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+/* @keyframes nav-hover {
+    from {
+        transition: translateY(0);
+    }
+    to {
+        transition: translateY(100px);
+    }
+} */ 
+
 @keyframes test{
     from {
         transform: translateY(30%);
@@ -69,6 +78,11 @@ ul {
 
 ul li {
     font-size: 32px;
+}
+
+ul li:hover {
+   /*  animation-name: nav-hover;
+    animation-duration: 1000ms; */
 }
 
 ul a, a:visited{
@@ -143,6 +157,9 @@ footer {
     .offer {
         align-items: center;
     }
+    ul {
+        padding: 3px;
+    }
 
 }
 
@@ -154,7 +171,7 @@ footer {
     }
 
     .img-text {
-        width: 75%;
+        width: 85%;
         margin: 2em 0;
     }
 
@@ -165,10 +182,11 @@ footer {
     article {
         flex-direction: column;
         align-items: center;
+        width: 85%;
     }
 
     article section {
-        width: 75%;
+        width: 85%;
     }
 
     #par {
@@ -178,5 +196,15 @@ footer {
    #middle {
     flex-direction: column;
    }
+}
+
+@media screen and (max-width: 1000px)
+{
+    ul {
+        width: 85%;
+    }
+    section img {
+        max-width: 100%;
+    }
 }
 
